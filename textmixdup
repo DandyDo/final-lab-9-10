@@ -1,0 +1,40 @@
+    public void testMixed(){
+        
+        int[] arr = new int[5];
+        arr[0] = 1;
+        arr[1] = 0;
+        arr[2] = 2;
+        arr[3] = -1;
+        arr[4] = 3;
+        
+        int[] Sortedarr = new int[5];
+        Sortedarr[0] = -1;
+        Sortedarr[1] = 0;
+        Sortedarr[2] = 1;
+        Sortedarr[3] = 2;
+        Sortedarr[4] = 3;
+        
+        assertTrue("Values are mixed", true);
+    }
+    
+    public void testDuplicates(){
+        
+        int[] arr = new int[5];
+        arr[0] = 1;
+        arr[1] = 0;
+        arr[2] = 1;
+        arr[3] = -1;
+        arr[4] = -1;
+        
+        int[] Sortedarr = new int[5];
+        Sortedarr[0] = -1;
+        Sortedarr[1] = -1;
+        Sortedarr[2] = 0;
+        Sortedarr[3] = 1;
+        Sortedarr[4] = 1;
+        
+        assertTrue("Some values are duplicates", true);
+    }
+
+
+}
